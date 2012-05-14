@@ -47,7 +47,17 @@ $(function(){
 	
 });
 </script>
+<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-20915846-1']);
+		  _gaq.push(['_trackPageview']);
 
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
 </head>
 
 <body>
@@ -56,19 +66,21 @@ $(function(){
             
        	<ul>
             <li><a class="home" href="#home">Home</a></li>
-            <li><a class="portfolio" href="#portfolio">Form</a></li>
-            <li><a class="services" href="#services">Documentation</a></li>
+            <li><a class="portfolio" href="#form">Form</a></li>
+            <li><a class="services" href="#docs">Documentation</a></li>
+			<li><a class="services" href="#download">Download</a></li>
             <li><a class="contact" style="border-bottom: 0;" href="#contact">Contact</a></li>
         </ul>
         
 
         <div id="social">
-<!--             <div class="social_facebook"><a href="http://www.facebook.com/" title="" target="_blank">&nbsp;</a></div> -->
+            <div class="social_facebook"><a href="http://www.facebook.com/logthis" title="" target="_blank">&nbsp;</a></div>
             <div class="social_twitter"><a href="https://twitter.com/#!/l_ogos" title="" target="_blank">&nbsp;</a></div>
 <!--
             <div class="social_lastfm"><a href="http://www.last.fm/" title="">&nbsp;</a></div>
             <div class="social_flickr"><a href="http://www.flickr.com/" title="">&nbsp;</a></div>
 -->
+
         </div>
         
         <div id="footer">
@@ -77,24 +89,22 @@ $(function(){
     </div>
 
     <a name="home"></a>
-    
 
     <div id="content">
-            <h2>JQuery & JS Data Model</h2>
-            <p>Hey, first of all this page look isn't my, i don't do any frontend stuff beside cool javascripts. </p>
+            <h2>JQuery & JS Data Model v0.9</h2>
+            <p>Hey, first of all the graphics and css of this page aren't mine, i don't make any frontend stuff beside cool javascripts.</p>
             
-            <p>So whats it for? It's for all the people who need to make some ajaxs forms working and they don't have time
-            to script all the form inputs. With this tool it will be simple as that:<br/>
+            <p>This tool is for all the people who need to make some ajaxs forms working and who don't have time to script all the form inputs. With this script it will be simple as that:<br/>
             <i>model = new DataModel();</i></br>
             <i>model.gatherData('#formId')</i></br>
             <i>model.post();</i></br>
-            And thats all! No matter how much inputs, checkboxes and other stuff you have in you form, it will send those!
+            And thats all! No matter how much inputs, checkboxes and other stuff you have in you form, it will send those! Now check out the form, fill it and try to send, the output will be seen below.
             </p>
 
             
 
     
-    <a name="portfolio"></a>
+    <a name="form"></a>
             
             <h2>The Form</h2>
             
@@ -148,7 +158,31 @@ $(function(){
                     <textarea cols="53" rows="10" id="comment" name="comment"></textarea> 
                 </div> 
                 
-                <div><button type="submit" id="btn" name="btn">Submit</button></div>
+				<div id=""  class="checkboxes"> 
+                    <label for="checkbox">checkbox</label> 
+                    <input type="checkbox" id="checkbox" name="checkbox" value="1"/> 
+                    
+                    <label for="checkbox2">checkbox2</label> 
+                    <input type="checkbox" id="checkbox2" name="checkbox2" value="2"/>
+                </div> 
+				<div class="clearall"></div>              
+				<div class="radios">
+					<label for="radio">radio</label> 
+                    <input type="radio" id="radio" name="radio" value="1"/>
+					<label for="radio2">radio</label> 
+                    <input type="radio" id="radio2" name="radio" value="2"/> 
+				</div>
+				<div class="clearall"></div>
+				<div style="height:40px">
+					<label for="radio">And some ugly select:</label> 
+					<select name="select">
+						<option value="option1">option1</option>
+						<option value="option2">option2</option>
+						<option value="option3">option3</option>
+					</select>
+				</div>
+				
+				<div><button type="submit" id="btn" name="btn">Submit</button></div>
                 
             </form>
             <div class="clearall"></div>
@@ -160,7 +194,7 @@ $(function(){
 
     
 
-    <a name="services"></a>
+    <a name="docs"></a>
             
             <h2>Documentation</h2>
             
@@ -234,6 +268,11 @@ $(function(){
 			</table>
 
     
+  	<a name="download"></a>
+  			<h2>Download</h2>
+  			this whole page because it looks good ^ ^
+  			<a href="https://github.com/Logosexe/JsDataModel" target="_blank">https://github.com/Logosexe/JsDataModel</a></br>
+  			or just get the dataModel.js and start testing it!
   
     <a name="contact"></a>
             

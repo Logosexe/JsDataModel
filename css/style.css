@@ -369,5 +369,7 @@ input, textarea {
 	clear: both;
 }
 
-#form-desc				{float: right; width: 50%}
-#ajaxoutput				{ word-wrap: break-word}
+#form-desc													{float: right; width: 50%}
+#ajaxoutput													{ word-wrap: break-word}
+.checkboxes	label, .radios label							{ float: left; padding-top: 2px}
+.checkboxes input, .radios input							{ float: left; width: 20px}
