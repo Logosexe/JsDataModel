@@ -1,0 +1,373 @@
+body {
+	margin: 0; padding: 0;
+	background: url(../images/body_bg.gif) repeat-y right #000000;
+	font: normal 11px Georgia, Arial, Helvetica, sans-serif;
+	color: #444;
+}
+
+/*::::::::: Links :::::::::*/
+a { color: #456c55; text-decoration: none; }
+a:hover { color: #FFFFFF; text-decoration: underline; }
+a:focus { outline: none; }
+
+
+/*::::::::: Container :::::::::*/
+.container {width: 980px; height: 100%; margin: 0 auto; overflow: hidden; font-size: 1.2em; position: relative;}
+
+/*::::::::: SideNav :::::::::*/
+#sidenav {
+	width: 150px;
+	position: fixed;
+	float: left;
+	background: #000000;
+	padding: 30px;
+	height: 100%;
+}
+*html #sidenav {
+	position: absolute; 
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}	
+
+#sidenav ul {
+	margin: 0; padding: 0;
+	list-style: none;
+	font-size: 13px;
+}
+#sidenav ul li{
+	margin: 0; padding:  0;
+	display: inline;
+}
+#sidenav ul li a{
+	display: block;
+	margin: 0; padding: 10px 0;
+	text-decoration: none;
+	color: #333;
+	border-bottom: 1px solid #101010;
+}
+#sidenav ul li a:hover { color: #456c55; }
+#sidenav ul li a.home{ background: url(../images/icon_home.gif) no-repeat top right; }
+#sidenav ul li a.portfolio{ background: url(../images/icon_portfolio.gif) no-repeat top right; }
+#sidenav ul li a.services{ background: url(../images/icon_services.gif) no-repeat top right; }
+#sidenav ul li a.contact{ background: url(../images/icon_contact.gif) no-repeat top right; }
+
+
+/*::::::::: Content :::::::::*/
+#content {
+	float: right;
+	width: 710px;
+	padding: 30px;
+	background: #0b0b0b;
+	position: relative;
+}
+#content h2 {
+	color: #456c55;
+	margin: 10px 0;  padding: 10px 0;
+	font-size: 2em;
+	font-weight: normal;
+}
+#content p {
+	line-height: 1.8em;
+	padding: 7px 0;
+	margin: 7px 0;
+}
+
+/*::::::::: SocialLinks :::::::::*/
+
+#social {
+	width: 150px;
+	height: 200px;
+	margin-top: 20px;
+}
+
+.social_facebook a {
+	display: block;
+	background: url(../images/social_facebook.gif) no-repeat top center;
+	width: 150px;
+	height: 50px;
+	text-decoration: none;
+}
+.social_facebook a:hover { background: url(../images/social_facebook.gif) no-repeat bottom center;text-decoration: none; }
+
+.social_twitter a {
+	display: block;
+	background: url(../images/social_twitter.gif) no-repeat top center;
+	width: 150px;
+	height: 50px;
+	text-decoration: none;
+}
+.social_twitter a:hover { background: url(../images/social_twitter.gif) no-repeat bottom center;text-decoration: none; }
+
+.social_lastfm a {
+	display: block;
+	background: url(../images/social_lastfm.gif) no-repeat top center;
+	width: 150px;
+	height: 50px;
+	text-decoration: none;
+}
+.social_lastfm a:hover { background: url(../images/social_lastfm.gif) no-repeat bottom center;text-decoration: none; }
+
+.social_flickr a {
+	display: block;
+	background: url(../images/social_flickr.gif) no-repeat top center;
+	width: 150px;
+	height: 50px;
+	text-decoration: none;
+}
+.social_flickr a:hover { background: url(../images/social_flickr.gif) no-repeat bottom center;text-decoration: none; }
+
+.logo { margin-bottom: 20px; }
+
+/*::::::::: SidenavFooter :::::::::*/
+#footer {
+	width: 150px;
+	height: auto;
+	margin-top: 40px;
+	font-size: 10px;
+	text-align: center;
+}
+
+/*::::::::: PORTFOLIO :::::::::*/
+
+/*--------- Captions ---------*/
+
+#portfolio {
+	width: 770px;
+	height: auto;
+}
+
+.photo {
+    position:relative;
+    overflow:hidden;
+    border:5px solid #FFF;
+    width:215px;
+    height:120px;
+    top: 0;
+    text-align: left;
+    cursor: default;
+}
+
+.photo .heading, .photo .imagecaption {
+        position:absolute;
+        background:#000;
+        height:40px;
+        width:215px;
+        opacity:0.9;
+}
+
+.photo .heading { 
+        top:-50px;
+        font-size: 15px;
+}
+
+.photo .imagecaption { 		
+        bottom:-50px;		
+        left:0px;
+}
+
+.photo .heading span {
+        color:#456c55;	
+        top:-50px;
+        font-weight:bold;
+        display:block;
+        padding:10px 0 0 10px;
+}
+
+.photo .imagecaption span{
+        color:#999;
+        font-size:11px;
+        display:block;
+        padding:13px 32px 0 10px;
+        float: left;
+}
+
+.photocaption {
+    width: 203px;
+    height: auto;
+    font-size: 11px;
+    color: #777777;
+    text-align: left;
+    background: #111111;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    float: left;
+    border: 1px solid #191919;
+    border-top: 0;
+}
+
+.photowrapper {
+    width: 225px;
+    height: auto;
+    background: #000000;
+    float: left;
+    margin: 0 20px 20px 0;
+    position: relative;
+}
+
+.latest {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    background: url(../images/portfolio/latest.png) no-repeat;
+    z-index: 100;
+}
+
+.featured {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    background: url(../images/portfolio/featured.png) no-repeat;
+    z-index: 100;
+}
+
+.mini {
+    width: 15px;
+    height: 13px;
+    float: left;
+    font-family: Arial;
+    margin-right: 18px;
+    margin-top: 9px;
+    text-align: center;
+    font-size:10px;
+}
+
+.mini a {
+    width: 15px !important;
+    height: 13px !important;
+    padding: 3px;
+    display: block;
+    background: #000000;
+    border: 1px solid #222222;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.mini a:hover {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    text-decoration: none;
+    color: #000000;
+}
+
+/*::::::::: FORMS :::::::::*/
+
+.slider {
+	overflow: hidden;
+}
+
+label {
+	color: #555555;
+	font-size: 11px;
+	margin-left: 20px;
+}
+
+input, textarea {
+	border: 1px solid #222222;
+	background: #000000;
+	margin-bottom: 10px;
+	padding: 6px;
+	padding-left: 25px;
+	color: #FFFFFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font: 11px Georgia;
+	width: 231px;
+}
+
+/*::::::::: Form Icons :::::::::*/
+#name { background: url(../images/icon_form_name.gif) no-repeat top left #000000; }
+#email { background: url(../images/icon_form_email.gif) no-repeat top left #000000; }
+#phone { background: url(../images/icon_form_phone.gif) no-repeat top left #000000; }
+#url { background: url(../images/icon_form_url.gif) no-repeat top left #000000; }
+#comment { background: url(../images/icon_form_comment.gif) no-repeat top left #000000; }
+
+#btn {
+	background: #456c55;
+	width: 264px;
+	border: 0;
+	cursor: pointer;
+	padding: 6px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #FFFFFF;
+	font: 11px Georgia;
+}
+
+#contactform {
+	width: 264px;
+	height: auto;
+	float: left;
+}
+
+#contactdetails {
+	width: 420px;
+	height: auto;
+	float: right;
+}
+
+#contactdetails p {
+	line-height: 18px;
+	margin: 20px 20px 0 0;
+	padding: 0;
+	float: left;
+}
+
+#contactdetails p strong {
+	color: #FFFFFF;
+}
+
+/*::::::::: Content Footer :::::::::*/
+
+#footfiller {
+	width: 710px;
+	height: 400px;
+	background: url(../images/footfiller.gif) no-repeat top center;
+	margin-bottom: -30px;
+	margin-top: 20px;
+}
+
+/*::::::::: Tables :::::::::*/
+
+#content table {
+	width: 100%;
+	border: 3px solid #222222;
+	padding: 0;
+	margin: 0;
+	background: #000000;
+}
+
+#content th { border-bottom: 1px solid #222222; border-right: 1px solid #090909; padding: 10px; }
+.bottoms { border-top: 1px solid #222222; }
+#content th strong { font-size: 22px; font-weight: bold; color: #FFFFFF; }
+#content td { border-right: 1px solid #090909; border-bottom: 1px solid #090909; padding: 10px; text-align: center; }
+.textright { text-align: right !important; }
+
+.requestbutton a {
+	width: 130px;
+	height: 30px;
+	display: block;
+	background: url(../images/requestbutton.gif) no-repeat top left;
+	text-decoration: none;
+	margin: auto;
+}
+
+.requestbutton a:hover {
+	background: url(../images/requestbutton.gif) no-repeat bottom left;
+	text-decoration: none;
+}
+
+/*::::::::: Misc :::::::::*/
+
+.clearall {
+	clear: both;
+}
+
+#form-desc				{float: right; width: 50%}
+#ajaxoutput				{ word-wrap: break-word}
