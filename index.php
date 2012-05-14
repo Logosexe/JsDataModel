@@ -3,18 +3,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+<!-- 
+	Hey there wanderer! You like looking on to the dark side? So do I. I always do that.
+	Nothing interesting here ^ ^
+-->
 
-<title>jQuery & Js Data Model for Your forms</title>
-
+<title>jQuery & Js Data Model for Your Ajax forms</title>
+<meta name="description" content="JS & JQuery Data Model for sending ajax forms" />
+<meta name="keywords" content="javascript,ajax,data,model" />
 <link rel="shortcut icon" href="favicon.ico" />
 
 <link href="css/style.css" type="text/css" rel="stylesheet" />
-<link href="css/pirobox_lightbox.css" type="text/css" rel="stylesheet" />
-
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/pirobox.min.js"></script>
 <script src="js/jquery.slidinglabels.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="js/smoothscroll.js"></script>
@@ -67,15 +69,16 @@ $(function(){
        	<ul>
             <li><a class="home" href="#home">Home</a></li>
             <li><a class="portfolio" href="#form">Form</a></li>
-            <li><a class="services" href="#docs">Documentation</a></li>
+            <li><a class="portfolio" href="#docs">Documentation</a></li>
 			<li><a class="services" href="#download">Download</a></li>
+			<li><a class="portfolio" href="#requirements">Requirments</a></li>
             <li><a class="contact" style="border-bottom: 0;" href="#contact">Contact</a></li>
         </ul>
         
 
         <div id="social">
             <div class="social_facebook"><a href="http://www.facebook.com/logthis" title="" target="_blank">&nbsp;</a></div>
-            <div class="social_twitter"><a href="https://twitter.com/#!/l_ogos" title="" target="_blank">&nbsp;</a></div>
+            <div class="social_twitter"><a href="http://twitter.com/|_ogos" title="" target="_blank">&nbsp;</a></div>
 <!--
             <div class="social_lastfm"><a href="http://www.last.fm/" title="">&nbsp;</a></div>
             <div class="social_flickr"><a href="http://www.flickr.com/" title="">&nbsp;</a></div>
@@ -92,7 +95,7 @@ $(function(){
 
     <div id="content">
             <h2>JQuery & JS Data Model v0.9</h2>
-            <p>Hey, first of all the graphics and css of this page aren't mine, i don't make any frontend stuff beside cool javascripts.</p>
+            <p>Hey, first of all the graphics and css of this page aren't mine (downloaded from free templates:P), i don't make any frontend stuff beside cool javascripts.</p>
             
             <p>This tool is for all the people who need to make some ajaxs forms working and who don't have time to script all the form inputs. With this script it will be simple as that:<br/>
             <i>model = new DataModel();</i></br>
@@ -269,17 +272,24 @@ $(function(){
 
     
   	<a name="download"></a>
+  	
   			<h2>Download</h2>
   			this whole page because it looks good ^ ^
   			<a href="https://github.com/Logosexe/JsDataModel" target="_blank">https://github.com/Logosexe/JsDataModel</a></br>
   			or just get the dataModel.js and start testing it!
   
+  
+  	<a name="requirements"></a>
+  	
+  			<h2>Requirements</h2>
+  			jQuery >= 1.6.2 - i didn't test it below this but it should work
+  			
     <a name="contact"></a>
             
             <h2>Contact Me</h2>
             
     		You can catch me @ <a href="http://log-this.com" target="_blank">log-this.com</a></br>
-    		Follow Me on Twitter <a href="https://twitter.com/#!/l_ogos" target="_blank">https://twitter.com/#!/l_ogos</a>
+    		Follow Me on Twitter @logos_dev <a href="https://twitter.com/logos_dev" target="_blank">https://twitter.com/logos_dev</a>
             
             
             
