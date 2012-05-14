@@ -109,8 +109,6 @@ var DataModel = function() {
 							
 							group = attr[0];
 							
-						//	if(name === null) name = attr[1].replace(']', '');
-							
 							if(attr.length > 2){
 								if(name === null) name = attr[attr.length -1].replace(']', '');
 								attr = attr.slice(1, attr.length);
@@ -123,14 +121,11 @@ var DataModel = function() {
 									if(i == 0) {
 										if($(obj).attr('type') == 'checkbox') {
 											if($(obj).attr('checked') == true || $(obj).attr('checked') == 'checked') {
-												//a[v] = $(obj).val();
 												a[name] = $(obj).val();
 											} else {
-												//a[v] = emptyCheckBoxVal;
 												a[name] = $(obj).val();
 											}
 										} else {
-											//a[v] = $(obj).val();
 											a[name] = $(obj).val();
 										}
 									}
@@ -216,15 +211,7 @@ var DataModel = function() {
 		/*
 			Check if ajax url is setted, if not try to take the form action param
 		*/
-	
-/*
-		if(this.postData == gather_data_fail){
-			if(DEBUG == true) {
-				console.log('failed to gather data')
-			}
-			return false;
-		}	
-*/
+
 	
 		if(this.ajaxUrl == null || this.ajaxUrl == ''){
 			this.ajaxUrl = this.form.attr('action');
@@ -238,15 +225,7 @@ var DataModel = function() {
 				dataType: this.dataType,
 				headers : this.headers,
 				success: function(json) {
-			/* error handling … */
-/*
-					if(json.errors){
-						$.each(json.errors, function(i, v){
-						console.log(i)
-							$(i).css('border', '1px solid red')
-						})
-					}
-*/
+
 				
 					if(successCallback)
 						successCallback(json);
@@ -289,18 +268,15 @@ Object.defineProperty(Object.prototype, "merge", {
                 Object.getOwnPropertyNames(from).forEach(function (name) {
                     var descriptor;
 
-                    // nesting
                     if ((typeof(dest[name]) === "object" || typeof(dest[name]) === "undefined")
                             && typeof(from[name]) === "object") {
 
-                        // ensure proper types (Array rsp Object)
                         if (typeof(dest[name]) === "undefined") {
                             dest[name] = Array.isArray(from[name]) ? [] : {};
                         }
                         dest[name].merge(from[name], override);
                     } 
 
-                    // flat properties
                     else if ((name in dest && override) || !(name in dest)) {
                         descriptor = Object.getOwnPropertyDescriptor(from, name);
                         if (descriptor.configurable) {
